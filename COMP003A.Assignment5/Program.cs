@@ -22,9 +22,7 @@ namespace COMP003A.Assignment5
 
             IsoscelesTriangleBuilder(triangleCharacter, triangleSize);
 
-            PrintSeparator("".PadRight(50,'*'));
-            PrintSeparator("Favorite Characters section");
-            PrintSeparator("".PadRight(50,'*'));
+            Characters();
 
             CharacterInfo("Batman", 1939);
             CharacterInfo("Superman", 1938);
@@ -89,6 +87,13 @@ namespace COMP003A.Assignment5
         {
             int age = AgeCalculator(birthYear);
             Console.WriteLine($"{name} is {age} years old.");
+        }
+
+        static void Characters()
+        {
+            Console.WriteLine("".PadRight(50, '*'));
+            Console.WriteLine("Favorite Characters section");
+            Console.WriteLine("".PadRight(50, '*'));
         }
     }
 }
